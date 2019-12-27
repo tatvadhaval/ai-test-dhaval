@@ -2,6 +2,18 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
+# node and npm versions
+
+node : `v11.6.0`
+npm  : `v6.7.0`
+
+# Installation steps
+
+1) `git clone https://github.com/tatvadhaval/ai-test-dhaval.git`
+2) `cd ai-test-dhaval`
+3) `npm install`
+4) `ng serve`
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
