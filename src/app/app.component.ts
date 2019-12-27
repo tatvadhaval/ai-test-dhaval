@@ -16,7 +16,6 @@ export interface PeriodicElement {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'ai-test-dhaval';
   displayedColumns: string[] = ['title', 'url', 'created_at', 'author'];
   dataSource: any;
   timer: number;
@@ -24,11 +23,16 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(public polls: PollsService, public dialog: MatDialog) { }
 
   ngOnInit() {
+
+    // get polls data
     this.getData();
+
+    // set interval of 10 seconds
     this.setPollsInterval();
   }
 
   ngOnDestroy() {
+    // destroy interval
     clearInterval(this.timer);
   }
 
@@ -44,6 +48,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   applyFilter(filterValue: string) {
+    // filter table data
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
 

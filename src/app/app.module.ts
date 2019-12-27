@@ -22,7 +22,7 @@ import { JsonDiologueComponent } from './json-diologue/json-diologue.component';
     MatInputModule,
     HttpClientModule,
     MatDialogModule,
-    MatButtonModule 
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent, JsonDiologueComponent]

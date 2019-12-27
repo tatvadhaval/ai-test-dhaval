@@ -6,25 +6,25 @@
   
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   
-    <!-- Position Column -->
+    <!-- Title Column -->
     <ng-container matColumnDef="title">
       <th mat-header-cell *matHeaderCellDef> Title. </th>
       <td mat-cell *matCellDef="let element"> {{element.title}} </td>
     </ng-container>
   
-    <!-- Name Column -->
+    <!-- URL Column -->
     <ng-container matColumnDef="url">
       <th mat-header-cell *matHeaderCellDef> URL </th>
       <td mat-cell *matCellDef="let element"> {{element.url}} </td>
     </ng-container>
   
-    <!-- Weight Column -->
+    <!-- Created At Column -->
     <ng-container matColumnDef="created_at">
       <th mat-header-cell *matHeaderCellDef> Created at </th>
       <td mat-cell *matCellDef="let element"> {{element.created_at}} </td>
     </ng-container>
   
-    <!-- Symbol Column -->
+    <!-- Author Column -->
     <ng-container matColumnDef="author">
       <th mat-header-cell *matHeaderCellDef> Author </th>
       <td mat-cell *matCellDef="let element"> {{element.author}} </td>
